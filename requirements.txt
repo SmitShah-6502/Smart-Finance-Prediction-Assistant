@@ -1,19 +1,27 @@
-# ----- Core -----
-streamlit
-pandas
-numpy
-scikit-learn
+streamlit==1.51.0
+pandas==2.3.3
+numpy==2.3.4
+scikit-learn==1.7.2
 
-# ----- Prophet (works on Streamlit Cloud without compiling CmdStan) -----
-prophet
-pystan
-Cython
-holidays
-convertdate
-LunarCalendar
-setuptools-git
+# Forecasting stack (Prophet uses cmdstanpy; no PyStan needed)
+prophet==1.2.1
+cmdstanpy==1.3.0
+holidays==0.84
+convertdate==2.4.0
+LunarCalendar==0.0.9
+matplotlib==3.10.7
+plotly==6.4.0
 
-# ----- Plotting / utils -----
-matplotlib
-plotly
+# App dependencies you use
+requests==2.32.5
+yahooquery==2.3.7
+openpyxl==3.1.5
+groq==0.13.0
+deep-translator==1.11.4
+gTTS==2.5.3
 
+# Optional RAG stack (your code degrades gracefully if missing)
+langchain==0.3.7
+langchain-community==0.3.7
+sentence-transformers==3.2.1
+faiss-cpu==1.8.0.post1
