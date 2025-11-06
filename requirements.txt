@@ -1,8 +1,20 @@
-streamlit
-yfinance
-requests
-beautifulsoup4
-langchain
-pdfkit
-jinja2
-groq
+# Core
+streamlit>=1.36,<2
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn>=1.2,<1.5
+
+# Prophet (prebuilt, no cmdstan compile)
+prophet==1.0.1
+pystan==2.19.1.1
+Cython<3
+
+# Prophet extras (holidays & calendars)
+holidays==0.14.2
+convertdate==2.4.0
+LunarCalendar==0.0.9
+setuptools-git==1.2
+
+# (optional) plotting/utils
+matplotlib>=3.6,<3.8
+plotly>=5.18,<6
