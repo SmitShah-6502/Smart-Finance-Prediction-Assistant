@@ -1,20 +1,18 @@
-# Core
-streamlit>=1.36,<2
+# ----- Core -----
+streamlit==1.37.1
 pandas==1.5.3
 numpy==1.23.5
-scikit-learn>=1.2,<1.5
+scikit-learn==1.4.2
 
-# Prophet (prebuilt, no cmdstan compile)
+# ----- Prophet (works on Streamlit Cloud without compiling CmdStan) -----
 prophet==1.0.1
 pystan==2.19.1.1
 Cython<3
-
-# Prophet extras (holidays & calendars)
 holidays==0.14.2
 convertdate==2.4.0
 LunarCalendar==0.0.9
 setuptools-git==1.2
 
-# (optional) plotting/utils
-matplotlib>=3.6,<3.8
-plotly>=5.18,<6
+# ----- Plotting / utils -----
+matplotlib==3.7.3
+plotly==5.24.1
